@@ -1,5 +1,5 @@
 """ This is the Calculator Class"""
-from calculator.operations import Operations
+from calculator.operations import Addition, Subtraction, Multiplication
 
 
 class Calculator:
@@ -8,17 +8,17 @@ class Calculator:
 
     def add(self, value_1, value_2):
         """ This is the add method"""
-        self.result = Operations.add(value_1, value_2)
+        self.result = Addition.add(value_1, value_2)
         return self.result
 
     def subtract(self, value_1, value_2):
         """ This is the subtract method"""
-        self.result = Operations.subtract(value_1, value_2)
+        self.result = Subtraction.subtract(value_1, value_2)
         return self.result
 
     def multiply(self, value_1, value_2):
         """ This is the subtract method"""
-        self.result = Operations.multiply(value_1, value_2)
+        self.result = Multiplication.multiply(value_1, value_2)
         return self.result
 
     def get_result(self):
