@@ -1,6 +1,7 @@
 """ This is the Calculator Class"""
 from calculator.operations import Operations
 
+
 class Calculator:
     """ This is the default result property"""
     result = 0
