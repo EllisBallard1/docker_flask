@@ -1,11 +1,6 @@
 name: Run Tests and Push Image to Heroku Dev
 
 on:
-  push:
-    branches:
-      - 'master'
-    tags:
-      - 'v*'
   pull_request:
     branches:
       - 'master'
