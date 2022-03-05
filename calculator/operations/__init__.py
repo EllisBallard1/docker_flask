@@ -13,6 +13,7 @@ class Subtraction:
         """ This is the subtract method"""
         return value_1 - value_2
 
+
 class Multiplication:
 
     @staticmethod
