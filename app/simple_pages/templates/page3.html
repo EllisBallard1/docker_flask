@@ -2,5 +2,56 @@
 
 {% block content %}
     <h1>Python Flask</h1>
-    <p>put in the rest of the information for python and flask with link to website</p>
+
+    <h3>Testing and Pytest</h3>
+
+    <p>Testing and Pytest are extremely integral in the development process. Testing our code allows for us to uncover
+        bugs
+        and issues that may hinder the user experience. Pytest is a tool that is able to test our code and provide
+        crucial information
+        on whether the different files passed the tests. Any file with the keyword "test" and the extension ".py" will
+        be tested by
+        the command "pytest" in a python terminal. In my code, I used pytest to ensure that the different simple pages I
+        created would
+        output the proper text to the screen with the correct references to my base templates. For each page that I
+        created, I also created
+        a test file that would simulate that page being run to detect if it worked properly or not.</p>
+
+    <a href="https://github.com/EllisBallard1/docker_flask"><h3>My GitHub Project Link</h3></a>
+
+    <a href="https://flask.palletsprojects.com/en/2.0.x/blueprints/"><h3>Flask Blueprint Documentation</h3></a>
+
+    <a href="https://docs.pytest.org/en/6.2.x/contents.html"><h3>Pytest Documentation</h3></a>
+
+    <h3>Purpose of Every File</h3><br>
+
+    <p>
+    <h4>Project 1 : Root of the directory</h4>
+    <p>.github : folder containing workflows</p>
+    <p>workflows : folder containing workflow files</p>
+    <p>dev.yml : development workflow</p>
+    <p>prod.yml : production workflow</p><br>
+
+    <h5>app : folder containing all the files in the app</h5>
+    <p>simple_pages : folder containing templates folder</p>
+    <p>templates : folder containing index and content pages</p>
+    <p>index.html : file containing code for the home page</p>
+    <p>page1.html : file containing code for the git page</p>
+    <p>page2.html : file containing code for the docker page</p>
+    <p>page3.html : file containing code for the python flask page</p>
+    <p>page4.html : file containing code for the continuous integration and deployment page</p><br>
+
+    <h5>static : folder containing files need to show images</h5>
+    <p>css : folder that contains all css files for styling</p>
+    <p>styles.css : file that contains all css code</p>
+    <p>images : folder to store images being used</p><br>
+
+    <h5>templates : folder containing the base html file</h5>
+    <p>base.html : file that contains the code for the base html file</p><br>
+
+    <h5>tests : folder that contains the test files</h5>
+    <p>simple_pages_test.py : file that tests the content for the simple pages</p>
+
+    </p>
+
 {% endblock %}

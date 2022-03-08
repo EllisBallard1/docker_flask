@@ -2,5 +2,17 @@
 
 {% block content %}
     <h1>CI/CD</h1>
-    <p>Put in the rest of the information about the CI/CD</p>
+
+    <h3>How to Setup GitHub Actions</h3>
+    <p>In order to use GitHub Actions, a tool that allows developers to automatically deploy their applications to different platforms,
+    you must apply the proper keys/tokens associated with the platform you wish to use. For Heroku, you must provide GitHub with your username,
+    password, and application name for your Heroku account. If you wish to review code on a development server, you must deploy the updated code
+    to a development branch associated with your platform of choice. From there you can observe the changes you made and then decide if you want
+    to apply these changes to your production branch. In the prod.yml file in my project, I specify that every time a pull request or push to the
+    master branch is made, then the master branch will automatically deploy the full application to my heroku production application.</p>
+
+    <p>The use of Continuous Integration and Continuous Deployment are possibly some of the most integral parts of efficient and successful development for the web.
+    According to martinFowler.com, "A big build often takes time, you don't want to do all of these steps if you've only made a small change."(Fowler 2013).
+    This snippet from Fowler gives us insight into the extremely useful nature of CI/CD, in which we can implement small changes without the need for
+    full system overhauls.</p>
 {% endblock %}
