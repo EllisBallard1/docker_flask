@@ -1,6 +1,58 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Git</h1>
-    <p>Put in the rest of the information for git</p>
+    <h1><b>Git</b></h1>
+    <body>
+    <h3>What is Git?</h3>
+    <p>Git is a free open source software used to track changes made in code/file sets. Git allows for
+        the user to track different versions and updates of their projects. It is extremely useful and plays a vital
+        role in the professional software development community. Git provides professional teams the ability to
+        apply changes and updates to projects while keeping the workflow continuous.
+    </p>
+
+    <h3>What is a branch?</h3>
+
+    <p>Branches are an extremely useful tool built into Git that allows programmers/developers to work
+        on different features of their program without affecting the current working version directly.
+        When a branch is created, the new branch is an exact copy of the initial branch, allowing the user
+        to change the original copy without affecting the master. The default branch that is created in a new project is
+        called the "master" or "main" branch, which
+        is the industry standard for "branching off". This refers to a new branch being made off of the master
+        branch, containing all the code and files of the initial branch.
+    </p>
+
+    <h3>What is a Merge?</h3>
+
+    <p>In Git, merging is a tool that allows for the combination and updating of branches. When a developer
+        merges a branch into another, GitHub, the remote repository implementation of Git, automatically
+        checks the two branches for merge conflicts. A merge conflict consists of two files with conflicting
+        files that would cause the merge to fail. If there is a conflict, the user must fix the issue before
+        the merge can be successfully completed. If/when there are no merge conflicts, the branches are then
+        able to be combined and update the changes. In order to merge two branches, the user must create
+        a new pull request, a tool built into GitHub that 'requests' a merge to be initiated between two branches.</p>
+
+    <h3>What is a Commit?</h3>
+
+    <p>Git has a built-in feature called commit. When the user creates a commit, they are essentially creating
+        a snapshot of their current progress that is stored using a pointer in Git. The user must provide a list
+        of files they want added to the commit, and they must provide a message explaining the reason for the commit.
+        When the user wants to apply the commits that they made, they must do a git push, another feature built into
+        Git that allows the user to send their current "snapshot" to a remote repository. Commits are incredibly useful
+        in professional software development because it allows the programmer to re-visit old committed versions
+        of their project, providing the ability to correct errors created by new additions.</p>
+
+    <h3>What are Tags?</h3>
+
+    <p>In Git, there is a built-in feature called Tags, which mark specific points in a repository's history.
+        These are useful for developers to see which commits are important and provide ease for future reference</p>
+
+    <h3>What is a Repository?</h3>
+
+    <p>A repository is a tool used to track all changes made to the files for a project. Repositories allow
+        for a history of changes that can be tracked over time for future reference. Repositories can be made either
+        private or public, allowing for developers to share their progress with other developers or potential future
+        employers. There are two types of repositories, local and remote. A local repository is the copy made on the
+        user's
+        local machine, while a remote repository is the version kept on GitHub that can be pushed and pulled from.</p>
+    </body>
 {% endblock %}
