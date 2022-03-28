@@ -3,7 +3,28 @@
 {% block content %}
     <h1>SOLID</h1>
 
-    <h3></h3>
-    <p></p>
+    <h3>What is SOLID programming?</h3>
+
+    <p><b>Single-responsibility principle: </b>A class should have one and only one reason to change, meaning that a class should have only one job.</p>
+
+    <p><b>Open-closed principle: </b>Objects or entities should be open for extension but closed for modification.</p>
+
+    <p><b>Liskov Substitution principle: </b>Every subclass or derived class should be substitutable for their base or parent class.</p>
+
+    <p><b>Interface Segregation principle: </b>A client should never be forced to implement an interface that it doesn't use, or clients shouldn't be forced to depend on methods they don't use.</p>
+
+    <p><b>Dependency Inversion principle: </b>Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low level module, but they should depend on abstractions.</p>
+
+    <br>
+
+    <h3>How does the calculator demonstrate SOLID?</h3>
+    <p>The calculator program demonstrates SOLID quite well. There is a single responsibility of the calculator class and each class/method that follows. Once they were created, they were never changed to handle other
+    responsibilities or features that we wanted to implement. Each class that was created for the different tests or operations was directly related to its parent class, and yet again were created for their single uses only.
+    There are no methods within this program that are mandatory for the client to implement if they do not choose to do so. Due to the single use structure the client is able to carry out different operations without the need to use all the different methods.
+    Each operation that is implemented depends on the abstraction of another class or method that is defined somewhere else, not re-created within the entity. This means the entity does not understand the function of the method, just that it serves the purpose it requires.</p>
+    <br>
+    <p>In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new". In the calculator program, we utilized
+    the factory pattern to create new objects every time we needed to carry out an operation without the need for us to create them manually. With this, we are able to use a calculator object to create other calculators that all conduct different operations. </p>
+
 
 {% endblock %}
