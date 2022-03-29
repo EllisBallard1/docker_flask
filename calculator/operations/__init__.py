@@ -17,14 +17,14 @@ class Subtraction:
 
     @staticmethod
     def subtract(value_1, value_2):
-        """ This is the add method"""
+        """ This is the subtract method"""
         return value_1 - value_2
 
 
 class Multiplication:
-    """ This is the subtraction class"""
+    """ This is the multiplication class"""
 
     @staticmethod
     def multiply(value_1, value_2):
-        """ This is the add method"""
+        """ This is the multiplication method"""
         return value_1 * value_2
